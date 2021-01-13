@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Build Application') {
 steps {
-bat 'mvn clean install'
+bat 'mvn -X clean install'
 }
 }
 stage('Test') {
